@@ -102,4 +102,5 @@ Since the model trained with the MSE lose function is significantly less effecti
 ## REFERENCES
 
 [GANs-for-Image-enhancement](https://github.com/nupam/GANs-for-Image-enhancement)
+
 [A Neural Algorithm of Artistic Style](https://arxiv.org/abs/1508.06576)
