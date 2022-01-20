@@ -18,7 +18,7 @@ Crappify is a process of generating low-quality images for training from the ori
 
 The dataset of generated images along with their high resolution counter-parts is available at: <https://www.kaggle.com/greenahn/flickrproc><sup>[1]</sup>.
 
-Notebook for Crappify : [crappify-imgs.ipynb](#TODO)
+Notebook for Crappify : [crappify-imgs.ipynb](https://github.com/isep-EoT-12/GAN-Image-Enhancement/blob/f62bac1f41442e0f8f2793605b777d2d155e6bb1/1.Crappify/crappify-imgs.ipynb)
 
 [1] Note that since many operations in the Crappify process are random, the training set of images generated is different each time, and you are better to use your own generated training set
 
@@ -42,13 +42,13 @@ The discriminator is a gan_critic() also available in fastai library which has s
 
 The first one uses Mean Squared Error(MSE) as loss. first, the UNet is trained by freezing the pre-trained ResNet-34 part. Then, all of the model is unfrozen and fine-tuned using smaller learning rate. The image size used in beginning is 128X128, Then the size is increased to 256X256 and trained again in a similar way.
 
-Notebook for pre-training with MSE lose function: [pretrain-gan-mse.ipynb](#TODO)
+Notebook for pre-training with MSE lose function: [pretrain-gan-mse.ipynb](https://github.com/isep-EoT-12/GAN-Image-Enhancement/blob/f62bac1f41442e0f8f2793605b777d2d155e6bb1/2.Pretrain/pretrain-gan-mse.ipynb)
 
 ##### Feature Loss
 
 The other model uses the same training process but the loss function is sum of Mean Absolute Error(MAE or l1_loss) and feature loss based on VGG-16 model, as in the famous paper on neural art transfer, <https://arxiv.org/abs/1508.06576>.
 
-Notebook for pre-training with MSE lose function: [pretrain-gan-feature-loss.ipynb](#TODO)
+Notebook for pre-training with MSE lose function: [pretrain-gan-feature-loss.ipynb](https://github.com/isep-EoT-12/GAN-Image-Enhancement/blob/f62bac1f41442e0f8f2793605b777d2d155e6bb1/2.Pretrain/pretrain-gan-feature-loss.ipynb)
 
 #### Discriminator
 
@@ -60,15 +60,15 @@ The discriminator and generator are then put together as Gan and trained.
 It is trained by switching adaptively between discriminator and generator whenever discriminator loss drops below certain threshold.
 Learning rate used is the standard LR for GANs, i.e, 0.0002, after training for some time it is then reduced to 0.0001.
 
-Notebook for model pre-trained with MSE: [train-gan-mse.ipynb](#TODO)
+Notebook for model pre-trained with MSE: [train-gan-mse.ipynb](https://github.com/isep-EoT-12/GAN-Image-Enhancement/blob/f62bac1f41442e0f8f2793605b777d2d155e6bb1/3.GAN/train-gan-mse.ipynb)
 
-Notebook for pre-trained with Feature-loss: [train-gan-feature-loss.ipynb](#TODO)
+Notebook for pre-trained with Feature-loss: [train-gan-feature-loss.ipynb](https://github.com/isep-EoT-12/GAN-Image-Enhancement/blob/f62bac1f41442e0f8f2793605b777d2d155e6bb1/3.GAN/train-gan-feature-loss.ipynb)
 
 ### Evaluate
 
 Evaluate pre-trained models and GAN-trained models using MSE, PSNR and SSIM respectively. the MSE, PSNR and SSIM can be computed either on a sample set (faster) or on the entire dataset (more accurate).
 
-Notebook for evaluation: [evaluate.ipynb](#TODO)
+Notebook for evaluation: [evaluate.ipynb](https://github.com/isep-EoT-12/GAN-Image-Enhancement/blob/f62bac1f41442e0f8f2793605b777d2d155e6bb1/4.Evaluate/evaluate.ipynb)
 
 ## RESULT
 
@@ -94,7 +94,7 @@ Since the model trained with the MSE lose function is significantly less effecti
 
 ## POSSIBLE IMPROVEMENTS
 
--   WGAN can be used instead of DCGAN loss(optimization of JS divergence).
+-   WGAN can be used instead of standard GAN loss(optimization of JS divergence).
 -   Rather than having a hardcoded loss function based on features from pre-trained model, we can concatenate those feature to the input of discriminator.
 -   Adding self attention to generator.
 -   Bigger network(e.g: ResNet-50 as backbone), and bigger dataset.
