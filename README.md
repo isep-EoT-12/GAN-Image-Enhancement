@@ -89,9 +89,9 @@ All models were trained on Kaggle using a single Nvidia K80 GPU, with pre-traini
 ### Evaluation
 
 Since the model trained with the MSE lose function is significantly less effective than the model using feature loss, only the evaluation of the feature loss model is shown here:
-![MSE](#TODO)
-![PSNR](#TODO)
-![SSIM](#TODO)
+![MSE](https://github.com/isep-EoT-12/GAN-Image-Enhancement/blob/master/Result/MSE.jpg?raw=true)
+![PSNR](https://github.com/isep-EoT-12/GAN-Image-Enhancement/blob/master/Result/PSNR.jpg?raw=true)
+![SSIM](https://github.com/isep-EoT-12/GAN-Image-Enhancement/blob/master/Result/SSIM.jpg?raw=true)
 
 ## POSSIBLE IMPROVEMENTS
 
