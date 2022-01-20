@@ -90,7 +90,7 @@ Since the model trained with the MSE lose function is significantly less effecti
 ![MSE](https://github.com/isep-EoT-12/GAN-Image-Enhancement/blob/master/Result/MSE.jpg?raw=true)
 ![PSNR](https://github.com/isep-EoT-12/GAN-Image-Enhancement/blob/master/Result/PSNR.jpg?raw=true)
 ![SSIM](https://github.com/isep-EoT-12/GAN-Image-Enhancement/blob/master/Result/SSIM.jpg?raw=true)
-![Result](https://github.com/isep-EoT-12/GAN-Image-Enhancement/blob/master/Result/Result.jpg?raw=true)
+![Result](https://github.com/isep-EoT-12/GAN-Image-Enhancement/blob/master/Result/Result.png?raw=true)
 
 ## POSSIBLE IMPROVEMENTS
 
