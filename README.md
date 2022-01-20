@@ -16,7 +16,7 @@ Although this dataset is not designed for GAN training, its moderate number of i
 
 Crappify is a process of generating low-quality images for training from the original image dataset by reducing resolution, adding dithering, randomly varying contrast, and adding random text, etc.
 
-The dataset of generated images along with their high resolution counter-parts is available at: <https://www.kaggle.com/greenahn/flickrproc><sup>[1]</sup>.
+The dataset of generated images along with their high resolution counter-parts is available [here](https://www.kaggle.com/greenahn/flickrproc)<sup>[1]</sup>.
 
 Notebook for Crappify : [crappify-imgs.ipynb](https://github.com/isep-EoT-12/GAN-Image-Enhancement/blob/f62bac1f41442e0f8f2793605b777d2d155e6bb1/1.Crappify/crappify-imgs.ipynb)
 
