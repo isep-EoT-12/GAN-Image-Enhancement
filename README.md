@@ -16,7 +16,7 @@ Although this dataset is not designed for GAN training, its moderate number of i
 
 Crappify is a process of generating low-quality images for training from the original image dataset by reducing resolution, adding dithering, randomly varying contrast, and adding random text, etc.
 
-The dataset of generated images along with their high resolution counter-parts is available at: <https://www.kaggle.com/greenahn/flickrproc>$^{[1]}$.
+The dataset of generated images along with their high resolution counter-parts is available at: <https://www.kaggle.com/greenahn/flickrproc><sup>[1]</sup>.
 
 The Notebook for Crappify : [crappify-imgs.ipynb](#TODO)
 
@@ -74,13 +74,9 @@ Notebook for evaluation: [evaluate.ipynb](#TODO)
 
 python 3.6.6
 
-pytorch 1.0.1.post2
-torchvision 0.2.2
-fastai 1.0.51
-pycuda 2018.1.1
-cupy-cuda100 5.4.0
-pandas 0.23.4
-numpy 1.16.3
+```shell
+pytorch==1.0.1.post2 torchvision==0.2.2 fastai==1.0.51 pycuda==2018.1.1 cupy-cuda100==5.4.0 pandas==0.23.4 numpy==1.16.3
+```
 
 ### Training Time
 
@@ -95,7 +91,7 @@ Since the model trained with the MSE lose function is significantly less effecti
 
 ## POSSIBLE IMPROVEMENTS
 
-- WGAN can be used instead of DCGAN loss(optimization of JS divergence).
-- Rather than having a hardcoded loss function based on features from pre-trained model, we can concatenate those feature to the input of discriminator.
-- Adding self attention to generator.
-- Bigger network(e.g: ResNet-50 as backbone), and bigger dataset.
+-   WGAN can be used instead of DCGAN loss(optimization of JS divergence).
+-   Rather than having a hardcoded loss function based on features from pre-trained model, we can concatenate those feature to the input of discriminator.
+-   Adding self attention to generator.
+-   Bigger network(e.g: ResNet-50 as backbone), and bigger dataset.
