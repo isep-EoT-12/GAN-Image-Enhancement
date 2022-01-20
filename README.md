@@ -98,3 +98,8 @@ Since the model trained with the MSE lose function is significantly less effecti
 -   Rather than having a hardcoded loss function based on features from pre-trained model, we can concatenate those feature to the input of discriminator.
 -   Adding self attention to generator.
 -   Bigger network(e.g: ResNet-50 as backbone), and bigger dataset.
+
+## REFERENCES
+
+[GANs-for-Image-enhancement](https://github.com/nupam/GANs-for-Image-enhancement)
+[A Neural Algorithm of Artistic Style](https://arxiv.org/abs/1508.06576)
